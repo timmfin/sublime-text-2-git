@@ -27,4 +27,12 @@
         "caption": "Git: Status",
         "command": "git_status"
     }
+    ,{
+        "caption": "Open GitX",
+        "command": "gitx_open"
+    }
+    ,{
+        "caption": "Commit via GitX",
+        "command": "gitx_commit"
+    }
 ]
