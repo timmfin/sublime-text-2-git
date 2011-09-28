@@ -186,3 +186,18 @@ class GitStatusCommand(GitCommand):
     
     def diff_done(self, success, result):
         self.scratch(result, title = "Git Diff")
+
+class GitxOpenCommand(GitCommand):
+    def run(self, edit):
+        self.run_command(['gitx'], self.empty_callback)
+    
+    def empty_callback(self):
+        pass
+
+class GitxCommitCommand(GitCommand):
+    def run(self, edit):
+        self.run_command(['gitx', '-c'], self.empty_callback)
+    
+    def empty_callback(self):
+        pass
+    
